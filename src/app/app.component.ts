@@ -1,3 +1,4 @@
+import { Student } from './student/student.model';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  luke = {name: 'luke',isJedi:true,temple:'Coruscant'}
-  leia = {name: 'leia',isJedi:false}
-  han = {name: 'Han solo',isJedi:false}
+  students:Student[] =[
+   {name: 'luke',isJedi:true,temple:'Coruscant'},
+   {name: 'leia',isJedi:false},
+   {name: 'Han solo',isJedi:false}
+]
 }
